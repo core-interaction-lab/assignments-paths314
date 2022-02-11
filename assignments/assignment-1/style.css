@@ -1,0 +1,72 @@
+h1
+{
+    font-family: 'Lora', serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+body    
+{
+    background-color: rgb(0, 0, 0);
+}
+
+p
+{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(176, 233, 228);
+    text-align: center;
+}
+
+.button
+  {background-color:rgba(255, 65, 65, 0);
+    color: rgb(79, 149, 255);
+  padding: 30px;
+  border: none;
+  border-radius: 30%;
+  margin: 40px;
+  align-items: center;
+  vertical-align: center;
+  align-content: flex-start;
+  font-family: 'Lora', serif;
+  font-size: larger;
+  cursor: pointer;
+  }
+
+  .button:hover
+  {
+      background-color:rgb(28, 83, 165);
+      border-radius: 0%;
+      cursor: pointer;
+      transition: .5s ease;
+      color:rgb(255, 255, 255)
+  }
+
+#mapicon {
+    position: relative;
+    filter: invert(100%);   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+}
+    #mapicon:hover
+        {
+        filter: drop-shadow(0 0 0.5rem rgb(255, 255, 255));
+        transition: .5s ease;
+        cursor: pointer;
+       
+        }
+
+
+#tweet {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #eyes_a1:hover {
+  opacity: 0;
+  cursor: none;
+} */

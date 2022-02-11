@@ -1,0 +1,135 @@
+h1
+{
+    font-family: 'Lora', serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h3
+{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(124, 124, 124);
+    text-align: left;
+}
+
+body    
+{
+    background-color: rgb(0, 0, 0);
+    cursor: url('car.png'), auto;
+}
+
+p
+{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(253, 184, 184);
+    text-align: center;
+}
+
+a:link {
+    color: rgb(255, 132, 132);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(255, 132, 132);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(255, 245, 111);
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+.module {
+    	
+  }
+
+.button
+  {background-color:rgb(255, 255, 255);
+    color: rgb(255, 79, 79);
+  padding: 30px;
+  border: none;
+  border-radius: 50%;
+  margin: 40px;
+  align-items: center;
+  vertical-align: center;
+  align-content: flex-start;
+  font-family: 'Montserrat', sans-serif;
+  font-size: large;
+  cursor: pointer;
+  position: fixed;
+  left: 920px;
+  top: 500px;
+  }
+
+  .button:hover
+  {
+      background-color:rgb(255, 79, 79);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: .2s ease;
+      color:rgb(255, 255, 255)
+}
+
+#mapicon1 {
+    position: absolute;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;  */
+    /* width: 50%; */
+    /* text-align: center; */
+    padding: 0px;
+    filter: invert(100%);   
+    top:150px;
+    right: 460px;
+
+}
+
+#mapicon {
+    position: absolute; 
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; */
+    /* text-align: center; */
+    padding: 0px;
+    top:150px;
+    right: 460px;
+}
+
+#mapicon:hover {
+    opacity: 0;
+    cursor: pointer;
+    transition-timing-function: ease;
+}
+
+
+#tweet {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #eyes_a1:hover {
+  opacity: 0;
+  cursor: none;
+} */
