@@ -1,0 +1,70 @@
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background-color: #FFB930;
+    background-position: top right;
+    height: 100vh;
+    margin: 0;
+    background-size: 800px;
+}
+
+h1 {
+    font-family: 'MuseoModerno', cursive;
+    font-weight: 400;
+    font-size: 7.5vw;
+    color: white;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+
+/* circle animation */
+
+
+@keyframes scale {
+    0% {
+      shape-inside: circle(250px, 250px, 210px);
+      -webkit-clip-path: circle(250px, 250px, 210px);
+   
+      shape-inside: circle(250px, 250px, 210px);
+      -webkit-clip-path: circle(210px at 250px 250px);
+    }
+    50% {
+      shape-inside: circle(250px, 250px, 250px);
+      -webkit-clip-path: circle(250px, 250px, 250px);
+   
+      shape-inside: circle(250px, 250px, 250px);
+      -webkit-clip-path: circle(250px at 250px 250px);
+    }
+    100% {
+      shape-inside: circle(250px, 250px, 210px);
+      -webkit-clip-path: circle(250px, 250px, 210px); 
+   
+      shape-inside: circle(250px, 250px, 210px);
+      -webkit-clip-path: circle(210px at 250px 250px);
+    }
+  }
+
+
+  body {height: 40000px; margin: 0; padding: 0;}
+  p {position: fixed; top: 0; left: 0; font-size: 40px;}
+  #demo {
+    text-align: center;
+    font-size: 10vw;
+    position: fixed; top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black; 
+    color: white;
+    transform: scale(0.2); /* since you ask for 20% */     
+  }
+
+  

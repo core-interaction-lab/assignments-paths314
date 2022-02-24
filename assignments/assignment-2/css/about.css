@@ -1,0 +1,101 @@
+/* body {
+    box-sizing: ;
+} */
+
+img {
+    max-width: 100%;
+}
+
+.primary-header {
+    display: flex;
+}
+
+h1 {
+    flex-grow: 1;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-left: 30px;
+}
+
+h2 {
+    flex-grow: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    flex-grow: 1;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end; */
+    position: -webkit- sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.menu ul li {
+    /* margin: 0 1rem; */
+    float: right;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(212, 0, 0);
+    /* color: black; */
+}
+
+.active {
+    background-color: rgb(100, 100, 100);
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.post {
+    width: fit-content;
+    overflow: auto;
+    /* margin: 0 1rem; */
+    padding: 0 1rem;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+
+.post_header {
+    font-family: 'Lora', serif;
+    text-align: center;
+    display: flex;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+    color: rgb(95, 95, 95);
+}

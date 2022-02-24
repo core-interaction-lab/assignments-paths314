@@ -1,0 +1,53 @@
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background: url(https://static.wixstatic.com/media/54ac61_daf518c3e8c244cd8a9b7f3eaafd6326~mv2.jpg/v1/fill/w_1032,h_839,al_c,q_85,usm_0.66_1.00_0.01/43_Pathak%2C%20Shruti.webp) center center no-repeat;
+    background-position: top right;
+    height: 100vh;
+    margin: 0;
+    background-size: 800px;
+}
+
+.content {
+    height: 100vh;
+    width: 6cw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.call-to-action {
+    text-align: left;
+}
+
+.call-to-action h1 {
+    font-family: 'Poppins-semibold', 'Poppins', sans-serif;
+    color: rgb(41, 41, 41);
+    text-transform: capitalize;
+    font-size: 50px;
+    text-align: left;
+}
+
+.call-to-action a {
+    background: rgb(41, 41, 41);
+    padding: 1rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    /* border-radius: 30%; */
+}
+
+.call-to-action a:hover {
+    background: red;
+    transition-duration: 0.2s;
+}
+
+@media (max-width: 750px) {
+    .call-to-action h1 {
+        font-size: 80px;
+    }
+}
