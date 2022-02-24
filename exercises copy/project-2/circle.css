@@ -1,0 +1,27 @@
+body {
+    height: 40000px; 
+    margin: 0; 
+    padding: 0;
+    background-color: #ffffff;
+}
+
+p {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    font-size: 40px;
+}
+
+#demo {
+  /* text-align: center; */
+  /* font-size: 10vw; */
+  position: fixed;
+  top: 0; 
+  right: 300;
+  width: 100px;
+  height: 100px;
+  background-color: #ffb930; 
+  color: white;
+  transform: scale(0.02); /* since you ask for 20% */ 
+  border-radius: 50%;    
+}

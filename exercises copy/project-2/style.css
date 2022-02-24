@@ -22,12 +22,47 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
 }
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-family: 'MuseoModerno', cursive;
+  color: rgb(255, 255, 255);
+  font-size: 7.5vw;
+  font-weight: 400;
+}
+
+.title a {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  text-transform: capitalize;
+  color: #e9a51e;
+  /* border: 2px solid #FFB930; */
+  border-radius: 15px;
+  cursor: pointer;
+  width: 10%;
+  /* display: inline; */
+}
+
+  .title a:hover
+  {
+      background-color:#FFB930;
+      border-radius: 15px;
+      border: 2px solid white;
+      font-weight: 400;
+      cursor: pointer;
+      transition: .2s ease-in-out;
+      color:rgb(255, 255, 255)
+  }
 
 
 /* circle animation */
-
+/* 
 
 @keyframes scale {
     0% {
@@ -51,20 +86,9 @@ h1 {
       shape-inside: circle(250px, 250px, 210px);
       -webkit-clip-path: circle(210px at 250px 250px);
     }
-  }
+  } */
 
 
-  body {height: 40000px; margin: 0; padding: 0;}
-  p {position: fixed; top: 0; left: 0; font-size: 40px;}
-  #demo {
-    text-align: center;
-    font-size: 10vw;
-    position: fixed; top: 0; left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black; 
-    color: white;
-    transform: scale(0.2); /* since you ask for 20% */     
-  }
+
 
   
