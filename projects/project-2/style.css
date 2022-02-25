@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background-color: #FFB930;
+    background-color: hsl(40, 100%, 60%);;
     background-position: top right;
     height: 100vh;
     margin: 0;
@@ -51,7 +51,7 @@ h1 {
 
   .title a:hover
   {
-      background-color:#FFB930;
+      background-color:hsl(40, 100%, 60%);
       border-radius: 15px;
       border: 2px solid white;
       font-weight: 400;

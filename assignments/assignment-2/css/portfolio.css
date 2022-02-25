@@ -8,6 +8,7 @@ img {
 
 .primary-header {
     display: flex;
+    
 }
 
 h1 {
@@ -32,6 +33,7 @@ p {
     display: flex;
     align-items: center;
     background-color: #333;
+    margin: 0%;
 }
 
 .menu ul {
@@ -96,4 +98,34 @@ footer {
     font-family: 'Poppins', sans-serif;
     font-size: smaller;
     color: rgb(95, 95, 95);
+}
+
+@media (max-width: 750px) {
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+    .post {
+        width: 100vw;
+        overflow: auto;
+        /* margin: 0 1rem; */
+        padding: 0 1rem;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+    
+    .post_body {
+        object-fit: cover;
+        vertical-align: bottom;
+    }
+
+    .menu ul li {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
 }

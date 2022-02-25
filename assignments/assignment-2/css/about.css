@@ -99,3 +99,13 @@ footer {
     font-size: smaller;
     color: rgb(95, 95, 95);
 }
+
+@media (max-width: 750px) {
+    .menu ul li {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}

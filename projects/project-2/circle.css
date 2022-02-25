@@ -2,7 +2,7 @@ body {
     height: 40000px; 
     margin: 0; 
     padding: 0;
-    background-color: #ffffff;
+    background-color: hsl(41, 86%, 94%);
 }
 
 p {
@@ -20,7 +20,7 @@ p {
   right: 300;
   width: 100px;
   height: 100px;
-  background-color: #ffb930; 
+  background-color: hsl(40, 100%, 60%);; 
   color: white;
   transform: scale(0.02); /* since you ask for 20% */ 
   border-radius: 50%;    

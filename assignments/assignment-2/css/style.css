@@ -6,13 +6,14 @@ body {
     background: url(https://static.wixstatic.com/media/54ac61_daf518c3e8c244cd8a9b7f3eaafd6326~mv2.jpg/v1/fill/w_1032,h_839,al_c,q_85,usm_0.66_1.00_0.01/43_Pathak%2C%20Shruti.webp) center center no-repeat;
     background-position: top right;
     height: 100vh;
+    width:auto;
     margin: 0;
-    background-size: 800px;
+    background-size:800px;
 }
 
 .content {
     height: 100vh;
-    width: 6cw;
+    width: 6vw;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -29,6 +30,7 @@ body {
     text-transform: capitalize;
     font-size: 50px;
     text-align: left;
+    width: 50vw;
 }
 
 .call-to-action a {
@@ -48,6 +50,22 @@ body {
 
 @media (max-width: 750px) {
     .call-to-action h1 {
-        font-size: 80px;
+        font-size: 45px;
+        color: rgb(41, 41, 41);
+        position: relative;
+        bottom: 200px;
     }
+
+    .call-to-action a {
+        position: relative;
+        bottom: 200px;
+    }
+
+    body {
+        background-position: center bottom;
+        background-size: 100%;
+    }
+
 }
+
+
