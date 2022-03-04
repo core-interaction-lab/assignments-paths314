@@ -16,11 +16,11 @@ p {
   /* text-align: center; */
   /* font-size: 10vw; */
   position: fixed;
-  top: 0; 
-  right: 300;
+  top: 0px; 
+  right: 300px;
   width: 100px;
   height: 100px;
-  background-color: hsl(40, 100%, 60%);; 
+  background-color: hsl(40, 100%, 54%);; 
   color: white;
   transform: scale(0.02); /* since you ask for 20% */ 
   border-radius: 50%;    

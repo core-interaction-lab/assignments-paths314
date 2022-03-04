@@ -1,0 +1,68 @@
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background-color: hsl(40, 100%, 54%);;
+    background-position: top right;
+    height: 100vh;
+    margin: 0;
+    background-size: 800px;
+}
+
+h1 {
+    font-family: 'MuseoModerno', cursive;
+    font-weight: 400;
+    font-size: 7.5vw;
+    color: white;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 7.5vw;
+  color: rgb(0, 0, 0);
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-family: 'MuseoModerno', cursive;
+  color: rgb(255, 255, 255);
+  font-size: 7.5vw;
+  font-weight: 400;
+}
+
+.title a {
+  background-color:hsl(40, 100%, 54%);
+  padding: 20px;
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  text-transform: capitalize;
+  color: #e9a51e;
+  border-radius: 15px;
+  border: 2px solid white;
+  font-weight: 400;
+  cursor: pointer;
+  color: white;
+  width: 10%;
+}
+
+.title a:hover {
+  background: white;
+  padding: 20px;
+  transition: .2s ease-in-out;
+  color: hsl(40, 100%, 54%);
+}
+
+
+  
