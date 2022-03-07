@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background-color: hsl(40, 100%, 54%);;
+    background-color: hsl(40, 100%, 60%);;
     background-position: top right;
     height: 100vh;
     margin: 0;
@@ -43,7 +43,7 @@ h2 {
 }
 
 .title a {
-  background-color:hsl(40, 100%, 54%);
+  background-color:hsl(40, 100%, 60%);
   padding: 20px;
   text-decoration: none;
   font-family: 'Lora', serif;

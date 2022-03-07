@@ -26,7 +26,7 @@ body {
 
 .call-to-action h1 {
     font-family: 'Poppins-semibold', 'Poppins', sans-serif;
-    color: rgb(41, 41, 41);
+    color: hsl(0, 0, 16);
     text-transform: capitalize;
     font-size: 50px;
     text-align: left;
@@ -34,24 +34,24 @@ body {
 }
 
 .call-to-action a {
-    background: rgb(41, 41, 41);
+    background: hsl(0, 0, 16);
     padding: 1rem;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
-    color: rgb(255, 255, 255);
+    color: hsl(0,0,100);
     /* border-radius: 30%; */
 }
 
 .call-to-action a:hover {
-    background: red;
+    background: hsl(0, 100, 50);
     transition-duration: 0.2s;
 }
 
 @media (max-width: 750px) {
     .call-to-action h1 {
         font-size: 45px;
-        color: rgb(41, 41, 41);
+        color: hsl(0, 0, 16);
         position: relative;
         bottom: 200px;
     }

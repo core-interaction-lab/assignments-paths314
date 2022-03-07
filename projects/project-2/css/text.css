@@ -16,28 +16,73 @@ h1 {
     margin: 0px;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 1.2vw;
+  font-family: 'Lora', serif;
+  margin: 7px;
+}
+
+h3 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 2.9vw;
+  color: hsl(40, 100%, 54%);
+  vertical-align: top;
+  margin: 0px;
+  text-align: left;
+}
+
 p {
     font-family: 'Lora', serif;
     font-size: 1.2vw;
     margin: 7px;
 }
 
-.section1 {
-    padding-bottom: 50px;
+mark.yellow {
+  color:hsl(0, 0%, 0%);
+  background: hsl(40, 100%, 83%);
 }
+
+
+a {
+  text-decoration: none;
+  color: hsl(273, 100%, 54%);
+}
+
+.section {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin: auto;
+}
+
+#march {
+  padding-top: 70px;
+}
+
+#april {
+  background-color: hsl(0, 0%, 100%);
+}
+
+#may {
+  background-color: hsl(41, 90%, 95%);
+}
+
+#june {
+  background-color: hsl(0, 0%, 100%);
+}
+
 
 .container {
     align-items: center;
     display: flex;
-    /* padding-bottom: 20px; */
-    vertical-align: top;
+    /* vertical-align: top; */
 }
 
 .column_left {
     width: 50%; 
     height: auto; 
     float: left; 
-    align-content: center;
     vertical-align: top;
     text-align: center;
     margin: auto;
@@ -52,7 +97,7 @@ p {
     align-content: flex-start;
     margin: auto;
     padding: 20px;
-    padding-right: 80px;
+    padding-right: 10vw;
 }
 
 
@@ -63,7 +108,6 @@ p {
     z-index: 1000;
     width: 100vw;
     height: auto;
-
 }
   
 .navbar ul{
@@ -73,6 +117,7 @@ p {
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-content: center;
   }
   
 .navbar ul li{
@@ -171,3 +216,63 @@ p {
     transform: scale(0.02); /* since you ask for 20% */ 
     border-radius: 50%;    
   }
+
+
+@media (max-width: 900px) {
+
+  .navbar ul{
+    position: relative;
+    align-content: center;
+    transform: translateY(-50%);
+    z-index: 1000;
+    /* width: auto; */
+    max-width: fit-content;
+  }
+
+  .navbar ul li .dot span {
+    visibility: hidden;
+  }
+
+  .navbar ul li:hover .dot span {
+    visibility: hidden;
+  }
+  
+  .container {
+    align-items: flex;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 7vh;
+    /* vertical-align: top; */
+  }
+
+  .column_right {
+    margin-left: 50%;
+    width: 80%; 
+    height: auto; 
+    text-align: left;
+    align-content: flex-start;
+    margin: 1px;
+    padding: 20px;
+    padding-right: none;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 4.5vw;
+  }
+
+  h3 {
+    font-size: 3.7vh;
+    padding: 3%;
+  }
+
+  p {
+    font-size: 4.5vw;
+  }
+
+  
+}

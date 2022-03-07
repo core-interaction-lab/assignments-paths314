@@ -25,3 +25,7 @@ p {
   transform: scale(0.02); /* since you ask for 20% */ 
   border-radius: 50%;    
 }
+
+#grave {
+  max-width: 10%;
+}
