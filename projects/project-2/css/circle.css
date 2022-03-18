@@ -1,8 +1,8 @@
 body {
-    height: 40000px; 
+    height: auto; 
     margin: 0; 
     padding: 0;
-    background-color: hsl(41, 86%, 94%);
+    background-color: hsl(40, 100%, 54%);
 }
 
 p {
@@ -10,6 +10,14 @@ p {
     top: 0; 
     left: 0; 
     font-size: 40px;
+}
+
+#grave {
+  position: fixed;
+  align-content: center;
+  left: 40vw;
+  top: 65vh;
+  width: 200px;
 }
 
 #demo {
@@ -26,6 +34,20 @@ p {
   border-radius: 50%;    
 }
 
-#grave {
-  max-width: 10%;
+
+#click-area {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
 }
+
+#clicked {
+  max-width: 10%;
+ visibility: visible;
+}
+
+

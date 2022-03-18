@@ -6,7 +6,7 @@ $(document).ready(function(){
 
       var top = $(window).scrollTop();
   
-      $('.sec').each(function(){
+      $('.section').each(function(){
         var id = $(this).attr('id');
         var height = $(this).height();
         var offset = $(this).offset().top - 150;

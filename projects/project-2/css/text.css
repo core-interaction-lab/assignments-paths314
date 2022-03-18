@@ -37,17 +37,137 @@ p {
     font-family: 'Lora', serif;
     font-size: 1.2vw;
     margin: 7px;
+    color:hsl(41, 100%, 54%);
+    font-weight: 600;
 }
 
-mark.yellow {
+.heading {
+  font-weight: bold;
+  font-size: 1.2vw;
+  font-family: 'Lora', serif;
+  margin: 7px;
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+}
+
+.title h1 {
+  font-family: 'MuseoModerno', cursive;
+  color: rgb(255, 255, 255);
+  font-size: 7.5vw;
+  font-weight: 400;
+}
+
+.title a {
+  background-color:hsl(40, 100%, 60%);
+  padding: 2px 0;
+  border-radius: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  transition: .2s ease-in-out;
+  display:flex;
+
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  font-size: 0%;
+}
+
+.title a:hover {
+  background: hsl(40, 100%, 60%);
+  /* border: 2px solid hsl(40, 100%, 70%); */
+  padding: 20px;
+  transition: .2s ease-in-out;
+  color: hsl(0, 0%, 100%);
+  align-content: center;
+
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  font-size: 100%;
+}
+
+
+
+/* NORMAL TEXT */
+
+p:hover > .black {
+  color:hsl(0, 0%, 0%);
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+
+.black {
+  color:hsl(0, 0%, 0%);
+  background: none;
+  font-weight: 400;
+  transition: 20s ease-in-out;
+}
+
+/* .letter {
+  color:hsl(41, 100%, 54%);
+  transition: 3s ease-in-out;
+}
+
+.letter:hover {
+  color:hsl(0, 0%, 0%);
+  transition: 1s ease-in-out;
+} */
+
+#letter {
+  color:hsl(41, 100%, 54%);
+  transition: 3s ease-in-out;
+  padding: 20px;
+  font-family: 'Lora', serif;
+}
+
+#letter:hover {
+  background: hsl(41, 90%, 95%);
+  border: 1px solid hsl(39, 19%, 23%));
+  color:hsl(0, 0%, 0%);
+  transition: 0s ease-in;
+  font-family: 'Lora', serif;
+}
+
+/* FADE IN AND OUT TEXT ANIMATION */
+
+/* .black {
+  opacity: 1;
+  animation: fade 5s ease-in-out;
+  animation-iteration-count: infinite;
+  font-weight: 400;
+}
+p:hover > .black {
+  animation-play-state: paused;
+  color:hsl(0, 0%, 0%);
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+} */
+
+
+
+/* .yellow:hover {
+  color:hsl(41, 100%, 54%);
+  background: none;
+  opacity: 100%;
+} */
+
+
+
+/* mark.yellow:hover {
   color:hsl(0, 0%, 0%);
   background: hsl(40, 100%, 83%);
-}
+  transition: ease-in-out;
+} */
 
 
 a {
   text-decoration: none;
-  color: hsl(273, 100%, 54%);
+  color: hsl(283, 100%, 69%);
 }
 
 .section {
@@ -74,7 +194,7 @@ a {
 
 
 .container {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     /* vertical-align: top; */
 }
@@ -85,7 +205,7 @@ a {
     float: left; 
     vertical-align: top;
     text-align: center;
-    margin: auto;
+    /*margin: auto;*/
     padding: 20px;
 }
 
@@ -100,6 +220,36 @@ a {
     padding-right: 10vw;
 }
 
+
+
+/* .home {
+  position: fixed;
+  top:5%; right:18%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100vw;
+  height: auto;
+}
+
+.home ul {
+  list-style-type: none;
+  padding:0; 
+  margin: 0;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.home ul li {
+  background-color: rgb(241, 241, 241);
+  font-family: 'Lora', serif;
+  width: 200px;
+  position: relative;
+  text-align: right;
+  position:sticky;
+  text-decoration: none;
+} */
 
 .navbar{
     position: fixed;
@@ -196,10 +346,7 @@ a {
   .navbar ul li .dot.active::after,
   .navbar ul li:hover .dot::after{
     transform: translateY(-50%) scale(1);
-  }
-
-
-
+}
 
 /* circle */
 
