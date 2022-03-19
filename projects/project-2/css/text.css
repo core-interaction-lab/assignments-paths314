@@ -124,7 +124,7 @@ p:hover > .black {
 
 #letter:hover {
   background: hsl(41, 90%, 95%);
-  border: 1px solid hsl(39, 19%, 23%));
+  /* border: 1px solid hsl(39, 19%, 23%); */
   color:hsl(0, 0%, 0%);
   transition: 0s ease-in;
   font-family: 'Lora', serif;
@@ -168,6 +168,13 @@ p:hover > .black {
 a {
   text-decoration: none;
   color: hsl(283, 100%, 69%);
+  transition: 0.2s ease-in;
+}
+
+a:hover {
+  text-decoration: none;
+  color: hsl(40, 100%, 54%);
+  transition: none;
 }
 
 .section {
@@ -367,23 +374,71 @@ a {
 
 @media (max-width: 900px) {
 
+  .navbar {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    width: auto;
+  }
+
   .navbar ul{
-    position: relative;
-    align-content: center;
-    transform: translateY(-50%);
-    z-index: 1000;
+    /* transform: translateY(-50%);
+    z-index: 1000; */
     /* width: auto; */
-    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    width: 10vw;
   }
 
   .navbar ul li .dot span {
     visibility: hidden;
+    width: 0px;
   }
 
   .navbar ul li:hover .dot span {
     visibility: hidden;
+    width: 0px;
   }
   
+.navbar ul li .dot::before,
+.navbar ul li .dot::after{
+    content: '';
+    position: absolute;
+    top:50%;
+    border-radius: 50%;
+    display: block;
+    transition: .2s ease-out;
+}
+  
+.navbar ul li .dot::before{
+    height:5px;
+    width: 5px;
+    border: 2px solid #333;
+    right:0;
+    transform: translateY(-50%);
+}
+  
+.navbar ul li .dot.active::before,
+.navbar ul li:hover .dot::before{
+    border-color: hsl(40, 100%, 54%);
+    background: hsl(40, 100%, 54%);
+  }
+  
+  .navbar ul li .dot::after{
+    height:15px;
+    width: 15px;
+    border: 2px solid hsl(40, 100%, 54%);
+    right:-5px;
+    transform: translateY(-50%) scale(0);
+  }
+  
+  .navbar ul li .dot.active::after,
+  .navbar ul li:hover .dot::after{
+    transform: translateY(-50%) scale(1);
+}
+
+
   .container {
     align-items: flex;
     display: flex;
@@ -418,7 +473,7 @@ a {
   }
 
   p {
-    font-size: 4.5vw;
+    font-size: 4.1vw;
   }
 
   

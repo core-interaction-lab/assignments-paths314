@@ -104,3 +104,14 @@ flex-grow: 1;
   font-family: 'MuseoModerno', cursive;
   color: blanchedalmond;
 }
+
+@media (max-width: 900px) {
+  
+  .title a{
+    padding: 10px;
+  }
+
+  .title a:hover {
+    padding: 10px;
+  }
+}

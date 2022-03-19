@@ -1,53 +1,112 @@
 body {
-    height: auto; 
-    margin: 0; 
-    padding: 0;
-    background-color: hsl(40, 100%, 54%);
+  height: auto; 
+  margin: 0; 
+  padding: 0;
+  background-color: hsl(40, 100%, 54%);
 }
 
 p {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    font-size: 40px;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  font-size: 40px;
 }
 
 #grave {
-  position: fixed;
-  align-content: center;
-  left: 40vw;
-  top: 65vh;
-  width: 200px;
+  position: absolute;
+  width: 25%;
+  bottom: 0px;
+  right: 40%;
 }
 
 #demo {
-  /* text-align: center; */
-  /* font-size: 10vw; */
-  position: fixed;
-  top: 0px; 
-  right: 300px;
-  width: 100px;
-  height: 100px;
-  background-color: hsl(40, 100%, 54%);; 
-  color: white;
-  transform: scale(0.02); /* since you ask for 20% */ 
-  border-radius: 50%;    
+/* text-align: center; */
+/* font-size: 10vw; */
+position: fixed;
+top: 0px; 
+right: 300px;
+width: 100px;
+height: 100px;
+background-color: hsl(40, 100%, 54%);; 
+color: white;
+transform: scale(0.02); /* since you ask for 20% */ 
+border-radius: 50%;    
 }
 
 
 #click-area {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
+position: fixed;
+width: 100vw;
+height: 100vh;
+top: 0;
+left: 0;
+z-index: 998;
+visibility: visible;
+}
+
+.flower {
+max-width: 10%;
+visibility: hidden;
+position: absolute;
+}
+
+
+
+h3 {
+  flex-grow: 1;
+}
+
+.primary-header {
+  display: flex;
+}
+
+.link {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(40, 100%, 54%);
+}
+
+a:hover{
+  color: hsl(283, 100%, 69%);
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
   z-index: 999;
-  visibility: hidden;
 }
 
-#clicked {
-  max-width: 10%;
- visibility: visible;
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  float: right;  
 }
 
+.menu ul li {
+  margin: 0 1rem;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  font-family: 'MuseoModerno', cursive;
+  color: #333;
+}
+
+.menu ul li a:hover{
+  text-decoration: none;
+  font-family: 'MuseoModerno', cursive;
+  color: blanchedalmond;
+}
+
+
+.left {
+  float: left;
+}
 
