@@ -1,0 +1,93 @@
+html, body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+h1 {
+  
+    font-weight: 400;
+    font-size: 7.5vw;
+
+}
+
+h2 {
+  text-align: center;
+  margin-top: 7vh;
+  margin-bottom: 3%;
+  margin-right: 5vh;
+}
+
+
+h3 {
+    flex-grow: 1;
+}
+
+
+p {
+    font-weight: 50;
+    font-size: 120%;
+    flex-grow: 1;
+    padding: auto;
+    margin-left: 15vw;  
+    margin-right: 15vw;
+}
+
+
+.post {
+    
+    display: block;
+}
+
+.post_header {
+   
+    text-align: center;
+    display: block;
+}
+
+.post__body{
+    margin-top: 5vh;
+}
+
+.primary-header {
+    display: flex;
+}
+  
+.link {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+  
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    float: right;  
+}
+  
+.menu ul li {
+    margin: 0 1rem;
+}
+  
+.menu ul li a{
+
+}
+
+.menu ul li a:hover{
+
+}
+
+
+.left {
+    float: left;
+}

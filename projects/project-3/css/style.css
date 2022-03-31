@@ -1,0 +1,77 @@
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);;
+    background-position: top right;
+    height: 100vh;
+    margin: 0;
+    background-size: 800px;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+.content {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+
+}
+
+.title a {
+
+}
+
+.title a:hover {
+
+}
+
+h3 {
+    flex-grow: 1;
+}
+
+.primary-header {
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    align-items: center;    
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    float: right;
+}
+
+
+.menu ul li {
+    margin: 0 1rem;
+}
+  
+.menu ul li a{
+
+}
+  
+.menu ul li a:hover{
+
+}
