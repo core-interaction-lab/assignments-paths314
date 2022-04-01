@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.article{
+    background-color: white ;
+    max-width: 100%;
+}
+
+.title{
+    font-size: 80px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.genre{
+    text-align: center;
+    font-size: 20px;
+}
+
+.description{
+    text-align: center;
+    width: 30%;
+    margin-left: 33%;
+    padding: 20px;
+}
+
+.imdb-link{
+    text-align: center;
+    margin-left: 47%;
+    text-decoration: none;
+}
+
+.release-date{
+    text-align: center;
+    font-size: 20px;
+}
