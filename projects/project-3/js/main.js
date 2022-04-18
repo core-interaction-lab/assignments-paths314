@@ -50,15 +50,19 @@ const fetchCloth = async () => {
 
     // if (fashionPrompt === "London") {
     const countrySort = clothesArray.filter(cloth => {
-        if (cloth.fields.based_in === "London" && cloth.fields.category === "Top") {
+        if (
+        // cloth.fields.based_in === "London" 
+        // && cloth.fields.based_in === "Bandung" 
+        // && cloth.fields.based_in === "Jakarta"
+        // && cloth.fields.based_in === "New York"
+        // && cloth.fields.based_in === "Los Angeles"
+         cloth.fields.category === "Top") {
         // && food.fields.Cuisine.includes("American"))
             return true;
         }
 
         return false;
-    })
-    
-    ;
+    });
 
     console.log(countrySort);
 
@@ -185,7 +189,9 @@ const fetchCloth2 = async () => {
     clothesArray = response.records;
 
     const countrySort = clothesArray.filter(cloth => {
-        if (cloth.fields.based_in === "London" && cloth.fields.category === "Pants") {
+        if (
+            // cloth.fields.based_in === "London" && 
+        cloth.fields.category === "Pants") {
         // && food.fields.Cuisine.includes("American"))
             return true;
         }

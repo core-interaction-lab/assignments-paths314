@@ -1,7 +1,8 @@
-
 html, body {
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
 }
 
 h2 {
@@ -37,6 +38,16 @@ p {
     padding-left: 15px;
 }
 
+.refresh p{
+    position: absolute;
+    bottom: 25px;
+    right: 73.5%;
+    color: hsl(198, 47%, 44%);
+    font-family: 'Lora', serif; 
+    text-align: center;
+    text-transform: none;
+}
+
 #person, #place, #city {
     font-family: "Varta", sans-serif;
     text-transform: uppercase;
@@ -64,13 +75,15 @@ p {
     /* margin: 0 1rem; */
     padding: 0 1rem;
     box-sizing: border-box;
-    height: 97vh;
+    height: 100vh;
     float: left;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
 
 .post-body {
     text-align: center;
@@ -79,16 +92,28 @@ p {
 
 #post1 {
     background-color: hsl(205, 100%, 91%);
+    border-style:dashed; 
+    border-width: 3px;
+    border-color: hsl(198, 47%, 44%);
+    border-right: none;
 }
 
 #post2 {
     background-color: hsl(205, 50%, 66%);
+    border-style:dashed; 
+    border-width: 3px;
+    border-color: hsl(197, 100%, 18%);
+    border-right: none;
 }
 
 #post3 {
     background-color: hsl(0, 0%, 100%);
+    border-style:dashed; 
+    border-width: 3px;
+    border-color: hsl(198, 47%, 44%);
+    /* border-left: none; */
+
     flex-direction: column;
-    height: 100vh;
 }
  
 

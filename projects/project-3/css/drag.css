@@ -69,18 +69,20 @@ h3 {
     flex-wrap: wrap;
     font-size: 30px;
     text-align: center;
-    width: auto;
+    width: 100%;
     height: 100%;
 }
 
 .flex-item-left {
     padding: 10px;
     flex: 50%;
+    height: 2%;
 }
 
 .flex-item-right {
     padding: 10px;
     flex: 50%;
+    
 }
 
 img {
@@ -100,4 +102,8 @@ img {
 
 #hat3 {
     padding: 10px;
+}
+
+#sunnies {
+    size:10px;
 }

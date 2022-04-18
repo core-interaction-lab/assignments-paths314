@@ -1,4 +1,4 @@
-$(document).ready(function() {alert("accessorize!"); })
+// $(document).ready(function() {alert("accessorize!"); })
 
 $(document).ready(function() {$("#hat1").draggable(); })
 $(document).ready(function() {$("#hat2").draggable(); })
