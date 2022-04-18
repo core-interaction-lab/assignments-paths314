@@ -24,6 +24,11 @@ const fetchMovies = async () => {
         descriptionEl.classList.add('description');
         posterEl.classList.add('poster');
 
+        var poster = document.createElement('img');
+        poster.src = "https://dl.airtable.com/.attachmentThumbnails/e5baf681ff621c0910deba13c9d4dfbe/92d8a31d";
+        poster.style.width = '100px';
+
+        var div = document.getElementById("movies-container");
 
         genreEl.innerHTML = movie.fields.Genre;
 
@@ -36,7 +41,7 @@ const fetchMovies = async () => {
         descriptionEl.innerHTML = movie.fields.Description;
         posterEl.innerHTML = movie.fields.Poster;
 
-        articleEl.append(titleEl, genreEl, releaseDateEl, imdbUrlEl, descriptionEl, posterEl);
+        articleEl.append(titleEl, genreEl, releaseDateEl, imdbUrlEl, descriptionEl, poster);
 
         moviesContainer.appendChild(articleEl);
     });

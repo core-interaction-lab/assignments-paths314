@@ -1,4 +1,53 @@
 
+html, body {
+    padding: none;
+    margin: none;
+}
+
+h2 {
+    font-family: "Lora", serif;
+    font-size: 40px;
+    font-weight: 100;
+    color:	hsl(198, 47%, 44%);
+}
+
+h3 {
+    font-family: "Libre Barcode 39 Text", cursive;
+    font-weight: 100;
+    font-size: 80px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#prompt {
+    font-family: "Libre Barcode 39 Text", cursive;
+    font-weight: 100;
+    font-size: 65px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: "Varta", sans-serif;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+#person, #place, #city {
+    font-family: "Varta", sans-serif;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+.icon {
+    width: 25px;
+    height: auto;
+}
+
 .post-header {
     display: flex;
 }
@@ -17,35 +66,77 @@
     box-sizing: border-box;
     height: 97vh;
     float: left;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-body {
+    text-align: center;
+    vertical-align: center;
 }
 
 #post1 {
-    background-color: hsl(0, 0%, 70%);
+    background-color: hsl(205, 100%, 91%);
 }
 
 #post2 {
-    background-color: hsl(0, 0%, 85%);
+    background-color: hsl(205, 50%, 66%);
 }
 
 #post3 {
     background-color: hsl(0, 0%, 100%);
+    flex-direction: column;
+    height: 100vh;
 }
  
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 0.5fr 1fr;
+    max-width: max-content;
 }
 
 .grid-child {
-    background-color: hsl(0, 0%, 100%);
-    padding: 20px;
+    background-color: hsla(0, 0%, 100%, 0%);
+    padding: none;
+    color: hsl(0, 0%, 100%);
+    width:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    text-align: left;
 }
 
 .btn {
     padding: 5px;
     margin: 0px, 10px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Varta', sans-serif;
+    color: 	hsl(198, 47%, 44%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute; 
+    bottom: 25px;
+    right: 30px;
+
+}
+
+ a:hover{
+    color: hsl(205, 50%, 66%);
+    /* color: hsl(197, 100%, 18%); */
+}
+
+.slideshow-nav {
+    display:flex;
+    flex-direction: row;
 }
 
 
@@ -54,3 +145,26 @@
       width: 100%;
     }
   }
+
+
+
+  /* *{
+    box-sizing: border-box;
+} */
+
+img {
+    max-width: 150px;
+}
+
+/* #slideshow-container {
+    display: flex;
+
+}
+
+article img {
+    width: 100%;
+}
+
+article p {
+    display: none;
+} */

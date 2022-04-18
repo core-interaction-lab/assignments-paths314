@@ -8,6 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/dress.css" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Varta:wght@300;400;500&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -19,15 +23,17 @@
             <section class="posts">
                 <article class="post" id="post1">
                     
-                    <header class="post_header">
-                        <h2>left</h2>
-                    </header>
+                    <!-- <header class="post_header">
+                        <h2>Dress a</h2>
+                        <form>[prompt]</form>
+                        <h2>Aesthetic</h2>
+                    </header> -->
 
                     <div class="post_body">
-                        <p>Lorem ipsum </p>
+                        <h2>Dress a</h2>
+                        <div id="prompt"></div>
+                        <h2>Aesthetic</h2>
                     </div>
-
-                    <button class="btn">Refresh</button>
 
                 </article>
 
@@ -35,7 +41,7 @@
                 <article class="post" id="post2">
                     
                     <header class="post_header">
-                        <h2>mid</h2>
+                        <h2></h2>
                     </header>
 
                     <div class="post_body">
@@ -44,61 +50,98 @@
                         <div class="grid-container">
 
                             <div class="grid-child">
-                                Icon 1
+                                <img class="icon" src="images/icons/icon-1.png">
                             </div>
                         
                             <div class="grid-child">
-                                Variable 1
+                                <div id="person">
+                                    <p></p>
+                                </div>
                             </div>
                           
-                        </div> <br>
+                        </div>
 
                         <div class="grid-container">
 
                             <div class="grid-child">
-                                Icon 2
+                                <img class="icon" src="images/icons/icon-2.png">
                             </div>
                         
                             <div class="grid-child">
-                                Variable 2
+                                <div id="place">
+                                    <p></p>
+                                </div>
                             </div>
                           
-                        </div> <br>
+                        </div>
                         
 
                         <div class="grid-container">
 
                             <div class="grid-child">
-                                Icon 3
+                                <img class="icon" src="images/icons/icon-3.png">
                             </div>
                         
                             <div class="grid-child">
-                                Variable 3
+                                <div id="city">
+                                    <p></p>
+                                </div>
+                            </div>
+                          
+                        </div>
+
+
+                        <div class="grid-container">
+
+                            <div class="grid-child">
+                                <img class="icon" src="images/icons/icon-4.png">
+                            </div>
+                        
+                            <div class="grid-child">
+                                <p>Unlimited</p>
                             </div>
                           
                         </div>
                         
                     </div>
 
-                    <button class="btn">Refresh</button>
-
                 </article>
 
 
                 <article class="post" id="post3">
-                    
-                    <header class="post_header">
-                        <h2>right</h2>
-                    </header>
 
-                    <div class="post_body">
-                        <p>Lorem ipsum</p>
+                    <div id="slide-div">
+                        <nav class = "slideshow-nav">
+                            <button id="prev">Previous</button>
+                            <section id="slideshow-container1">
+                            </section>
+                            <button id="next">Next</button>
+                        </nav>
                     </div>
 
-                    <button class="btn">Accessorize</button>
+                    <div id="slide-div">
+                        <nav class = "slideshow-nav">
+                            <button id="prev2">Previous</button>
+                            <section id="slideshow-container2">
+                            </section>
+                            <button id="next2">Next</button>
+                        </nav>
+                    </div>
+
+                    <div id="slide-div">
+                        <nav class = "slideshow-nav">
+                            <button id="prev3">Previous</button>
+                            <section id="slideshow-container3">
+                            </section>
+                            <button id="next3">Next</button>
+                        </nav>
+                    </div>
+
+                    <a href="drag.html"> Accessorize →</a>
 
                 </article>
             </section>
         </main>
+        <script src="js/main.js"></script>
     </body>
 </html>

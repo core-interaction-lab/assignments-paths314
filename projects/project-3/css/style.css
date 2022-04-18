@@ -3,9 +3,9 @@ html, body {
 }
 
 body {
-    background-color: hsl(0, 0%, 100%);;
+    background-color: hsl(198, 47%, 44%);
     background-position: top right;
-    height: 100vh;
+    height: cover;
     margin: 0;
     background-size: 800px;
 }
@@ -17,6 +17,26 @@ h1 {
 h2 {
 
 }
+
+.box-in {
+    width:cover;
+    height: 600px;
+    border-style:dashed; border-width: 4px;
+    position: relative;
+    margin: 20px 20px 0px 20px; 
+    color: hsl(205, 100%, 78%);
+    z-index: 100;
+}
+/* 
+.box-out {
+    width:cover;
+    height: 650px;
+    border-style:none;
+    position: relative;
+    margin: none; 
+    background-color:  hsl(199, 19%, 81%);
+    z-index: 200;
+} */
 
 .content {
     height: 75vh;
@@ -30,15 +50,24 @@ h2 {
 }
 
 .title h1 {
-
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 80px;
+    font-weight: 100;
+    color: hsl(0, 0%, 0%);
 }
 
 .title a {
-
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;  
 }
 
 .title a:hover {
-
+    text-decoration: none;
+    color: hsl(198, 47%, 44%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;  
 }
 
 h3 {
@@ -56,22 +85,30 @@ h3 {
 
 .menu ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     float: right;
 }
 
-
 .menu ul li {
     margin: 0 1rem;
 }
   
 .menu ul li a{
-
+    text-decoration: none;
+    font-family: 'Varta', sans-serif;
+    color: hsl(197, 100%, 18%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 500;
 }
   
 .menu ul li a:hover{
-
+    color: 	hsl(0, 0%, 100%);
 }
+
+
+
