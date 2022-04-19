@@ -56,12 +56,13 @@ h3 {
 
 .box-in {
     width:cover;
-    height: 600px;
+    /* height: 600px; */
     border-style: dashed; border-width: 4px;
     position: relative;
     margin: 20px 20px 0px 20px; 
     color: hsl(205, 100%, 78%);
     z-index: 100;
+    margin-bottom: 20px;
 }
 
 .flex-container {
@@ -104,6 +105,56 @@ img {
     padding: 10px;
 }
 
-#sunnies {
-    size:10px;
+#bag1 {
+    width: 90px;
+    height:auto;
 }
+
+#bag2 {
+    width: 60px;
+    height:auto;
+}
+
+#bag3 {
+    width: 90px;
+    height:auto;
+}
+
+#sunnies {
+    width: 60px;
+    height:auto;
+}
+
+#chain1 {
+    width: 50px;
+    height:auto;
+}
+
+#chain2{
+    width: 60px;
+    height:auto;
+}
+
+#bclet1 {
+    width: 30px;
+    height: auto;
+}
+
+#bclet2 {
+    width: 30px;
+    height: auto;
+}
+
+#tie {
+    width: 38px;
+    height: auto;
+}
+
+#mannequin {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 150px;
+    right: 585px;
+}
+

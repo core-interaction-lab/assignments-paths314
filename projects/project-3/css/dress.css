@@ -12,6 +12,7 @@ h2 {
     color:	hsl(198, 47%, 44%);
 }
 
+
 h3 {
     font-family: "Libre Barcode 39 Text", cursive;
     font-weight: 100;
@@ -25,7 +26,7 @@ h3 {
 #prompt {
     font-family: "Libre Barcode 39 Text", cursive;
     font-weight: 100;
-    font-size: 65px;
+    font-size: 50px;
     background-color: hsl(0, 0%, 100%);
     padding: 20px;
     margin-top: 20px;
@@ -84,7 +85,6 @@ p {
 }
 
 
-
 .post-body {
     text-align: center;
     vertical-align: center;
@@ -92,34 +92,92 @@ p {
 
 #post1 {
     background-color: hsl(205, 100%, 91%);
-    border-style:dashed; 
+    /* border-style:dashed; 
     border-width: 3px;
     border-color: hsl(198, 47%, 44%);
-    border-right: none;
+    border-right: none; */
+}
+
+#box1 {
+    z-index: 100;
+    width: 33.33%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    height: 97vh;
+    width: 400px;
+    float: left;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style:dashed; 
+    border-width: 3px;
+    border-color: hsl(205, 50%, 66%);
+    border-top: none;
+    border-bottom: none;
 }
 
 #post2 {
     background-color: hsl(205, 50%, 66%);
-    border-style:dashed; 
+    /* border-style:dashed; 
     border-width: 3px;
     border-color: hsl(197, 100%, 18%);
-    border-right: none;
+    border-right: none; */
 }
+
+#box2 {
+    z-index: 100;
+    width: 33.33%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    height: 97vh;
+    width: 400px;
+    float: left;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style:dashed; 
+    border-width: 3px;
+    border-color: 	hsl(205, 100%, 91%);
+    border-top: none;
+    border-bottom: none;
+}
+
 
 #post3 {
     background-color: hsl(0, 0%, 100%);
-    border-style:dashed; 
+    /* border-style:dashed; 
     border-width: 3px;
     border-color: hsl(198, 47%, 44%);
-    /* border-left: none; */
+    border-left: none; */
 
     flex-direction: column;
 }
- 
+
+/* #box3 {
+    z-index: 100;
+    width: 33.33%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    height: 97vh;
+    width: fit-content;
+    float: left;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style:dashed; 
+    border-width: 3px;
+    border-color: hsl(198, 47%, 44%);
+    border-top: none;
+    border-bottom: none;
+}
+  */
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    display: flex;
+    /* grid-template-columns: 0.5fr 1fr; */
     max-width: max-content;
 }
 
@@ -135,12 +193,21 @@ p {
     text-align: left;
 }
 
-.btn {
-    padding: 5px;
-    margin: 0px, 10px;
+.grid-child:last-child {
+    flex: 1;
 }
 
+
 a {
+    color:hsl(198, 47%, 44%);
+    text-decoration: none;
+}
+/* 
+a:hover {
+    color: hsl(205, 50%, 66%);
+} */
+
+#Accessorize {
     text-decoration: none;
     font-family: 'Varta', sans-serif;
     color: 	hsl(198, 47%, 44%);
@@ -154,7 +221,7 @@ a {
 
 }
 
- a:hover{
+#Accessorize:hover{
     color: hsl(205, 50%, 66%);
     /* color: hsl(197, 100%, 18%); */
 }
@@ -164,32 +231,59 @@ a {
     flex-direction: row;
 }
 
+img {
+    max-width: 150px;
+}
+
+
+#prev, #prev2, #prev3, #next, #next2, #next3{
+    font-family: 'Varta', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 20px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(198, 47%, 44%);
+    border: none;
+    /* height: 30px; */
+    width:fit-content;
+    /* align-items: center;
+    justify-content: center; */
+    cursor: pointer;
+    padding: 15px;
+    padding-right: 15px;
+    padding-top: none;
+    padding-bottom: none;
+}
+
+#prev, #prev2, #prev3{
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+#prev:hover, #prev2:hover, #prev3:hover, #next:hover, #next2:hover, #next3:hover{
+    font-family: 'Varta', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 20px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(205, 50%, 66%);
+    /* height: 30px; */
+    width:fit-content;
+    /* align-items: center;
+    justify-content: center; */
+    cursor: pointer;
+}
+
+
 
 @media screen and (max-width: 700px) {
     .post {
       width: 100%;
     }
   }
-
-
-
-  /* *{
-    box-sizing: border-box;
-} */
-
-img {
-    max-width: 150px;
-}
-
-/* #slideshow-container {
-    display: flex;
-
-}
-
-article img {
-    width: 100%;
-}
-
-article p {
-    display: none;
-} */

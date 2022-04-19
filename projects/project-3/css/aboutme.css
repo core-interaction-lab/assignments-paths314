@@ -27,6 +27,7 @@ h2 {
   background-color: hsl(0, 0%, 100%);
   padding: 20px;
   margin-top: 20px;
+  display: inline-block;
 }
 
 
@@ -53,10 +54,9 @@ p {
     display: block;
 }
 
-.post_header {
-   
+.post__header {
     text-align: center;
-    display: block;
+    /* display: block; */
 }
 
 .post__body{

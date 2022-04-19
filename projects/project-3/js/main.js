@@ -1,7 +1,3 @@
-var things = ['Rock', 'Paper', 'Scissor'];
-var thing = things[Math.floor(Math.random()*things.length)];
-
-
 function fetchPrompt () {
     var fashionPrompt = document.getElementById('prompt');
     var prompts = ['Grunge', 'Soft', 'Cottagecore', 'Street', 'Monochrome'];
@@ -33,42 +29,47 @@ function fetchCity () {
     var prompts = ['Bandung', 'Jakarta', 'London', 'Los Angeles', 'New York'];
     var prompt = prompts[Math.floor(Math.random()*prompts.length)];
     fashionPrompt.append(prompt);
-}
 
-fetchCity();
+    return prompt;
+}
 
 
 const slideshowContainer = document.getElementById('slideshow-container1');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
+const currentCity = fetchCity();
+
 const fetchCloth = async () => {
     const response = await fetch(`https://api.airtable.com/v0/appkNVqbznidQU28x/Table%201?api_key=keyg6NaxejaLbInJ7`).then(data => data.json());
     // console.log(response);
+
     
-    clothesArray = response.records;
+
+    const clothesArray = response.records;
+    filterCity(currentCity, clothesArray);
 
     // if (fashionPrompt === "London") {
-    const countrySort = clothesArray.filter(cloth => {
+    return response.records;
+};
+
+function filterCity (city, clothesArray) {
+    const citySort = clothesArray.filter(cloth => {
+
         if (
-        // cloth.fields.based_in === "London" 
-        // && cloth.fields.based_in === "Bandung" 
-        // && cloth.fields.based_in === "Jakarta"
-        // && cloth.fields.based_in === "New York"
-        // && cloth.fields.based_in === "Los Angeles"
-         cloth.fields.category === "Top") {
-        // && food.fields.Cuisine.includes("American"))
+        cloth.fields.based_in === city 
+        && cloth.fields.category === "Top") {
+
             return true;
         }
 
         return false;
     });
 
-    console.log(countrySort);
+    console.log(citySort);
 
-    buildSlideshow(countrySort);
-    return response.records;
-};
+    buildSlideshow(citySort);
+}
 
 const buildSlideshow = (clothes) => {
 
@@ -185,24 +186,29 @@ const nextButton2 = document.getElementById('next2');
 const fetchCloth2 = async () => {
     const response = await fetch(`https://api.airtable.com/v0/appkNVqbznidQU28x/Table%201?api_key=keyg6NaxejaLbInJ7`).then(data => data.json());
     // console.log(response);
-    
-    clothesArray = response.records;
 
-    const countrySort = clothesArray.filter(cloth => {
+    // const currentCity = fetchCity(prompt);
+    
+    const clothesArray = response.records;
+    filterCity2(currentCity, clothesArray);
+};
+
+function filterCity2 (city, clothesArray) {
+    const citySort = clothesArray.filter(cloth => {
         if (
-            // cloth.fields.based_in === "London" && 
+            cloth.fields.based_in === city && 
         cloth.fields.category === "Pants") {
-        // && food.fields.Cuisine.includes("American"))
+      
             return true;
         }
 
         return false;
     });
 
-    console.log(countrySort);
+    console.log(citySort);
 
-    buildSlideshow2(countrySort);
-    return response.records;
+    buildSlideshow2(citySort);
+    // return response.records;
 };
 
 const buildSlideshow2 = (clothes) => {
@@ -234,7 +240,7 @@ const buildSlideshow2 = (clothes) => {
         console.log(leftIndex, rightIndex);
         
         slideshowContainer2.removeChild(slideshowContainer2.children [0]);
-        slideshowContainer2.append(buildSlide(clothes[rightIndex],rightIndex));
+        slideshowContainer2.append(buildSlide2(clothes[rightIndex],rightIndex));
     });
 
     prevButton2.addEventListener('click', () => {
@@ -320,7 +326,7 @@ const fetchCloth3 = async () => {
     
     clothesArray = response.records;
 
-    const countrySort = clothesArray.filter(cloth => {
+    const citySort = clothesArray.filter(cloth => {
         if (cloth.fields.category === "Footwear") {
         // && food.fields.Cuisine.includes("American"))
             return true;
@@ -329,9 +335,9 @@ const fetchCloth3 = async () => {
         return false;
     });
 
-    console.log(countrySort);
+    console.log(citySort);
 
-    buildSlideshow3(countrySort);
+    buildSlideshow3(citySort);
     return response.records;
 };
 
