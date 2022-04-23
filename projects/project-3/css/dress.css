@@ -287,3 +287,62 @@ img {
       width: 100%;
     }
   }
+
+
+
+
+
+
+
+
+  .primary-header {
+    display: flex;
+}
+  
+.link a {
+    text-align: center;
+    text-decoration: none;
+    color: hsl(198, 47%, 44%);
+    font-weight: 600;
+}
+
+.link a:hover {
+    color:  hsl(197, 100%, 18%);;
+}
+
+.menu{
+    display: flex;
+    align-items: center;    
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    float: right;
+}
+
+
+.menu ul li {
+    margin: 0 1rem;
+}
+  
+.menu ul li a{
+    text-decoration: none;
+    font-family: 'Varta', sans-serif;
+    color: hsl(197, 100%, 18%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 500;
+}
+  
+.menu ul li a:hover{
+    color: 	hsl(198, 56%, 59%);
+}
+
+.left {
+    float: left;
+}

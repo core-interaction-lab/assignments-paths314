@@ -1,0 +1,226 @@
+html, body {
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: 'Bogam';
+    src: url('fonts/Bogam.otf');
+}
+
+@font-face {
+    font-family: 'GT Eesti Display Trial';
+    src: url('fonts/GT-Eesti-Display-Regular-Trial.otf');
+}
+
+body {
+    background-color: hsl(123, 83%, 14%);
+    margin: 0;
+    height: 200vh;
+    background-size: 900px;
+}
+
+
+.primary-header{
+    display: block;
+    position: fixed;
+    background-color: hsla(0, 0%, 100%, 0.933);
+    backdrop-filter: blur(9);
+    width: 100%;
+    height: 90px;
+    z-index: 30;
+    margin-top: 29px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    float: right;
+    margin-top: -65px;
+}
+
+.menu ul li {
+    margin: 0 2rem;
+}
+
+a {
+    font-family: 'GT Eesti Display Trial';
+    color: hsl(123, 83%, 14%);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logo{
+    padding: 6px;
+}
+
+.filter{
+    position: fixed;
+    background-color: hsl(15, 29%, 97%);
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    width: 10.2rem;
+    margin-left: 12px;
+    margin-top: 135px;
+    flex-direction: column;
+    height: 580px;
+    z-index: 5;
+    border-radius: 15px;
+    /* border-right: 4px hsl(20, 3%, 79%) solid;
+    border-top: 4px hsl(0, 3%, 79%) solid; */
+}
+
+.filter-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 10em;
+    align-content: center;
+    justify-content: center;
+}
+
+.filterby-container{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    width: 8em;
+    padding: 0.8em;
+    height: 3vh;
+    margin-top: 10px;
+}
+
+.filter-text{
+    font-family: 'GT Eesti Display Trial';
+    font-size: 1.8em;
+    color: hsl(123, 83%, 14%);
+}
+
+/* .filter-category-container{
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 0.7em;
+    width: 100px;
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.filter-category-container:hover {
+    background-color: #ddd;
+  }
+  
+.filter-category-container:active {
+    background-color: #666;
+    color: white;
+  } */
+
+#buttons{
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.show{
+    display: block;
+}
+
+.btn{
+    font-family: 'GT Eesti Display Trial';
+    font-size: 1.4em;
+    align-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 0.9em;
+    width: 100px;
+    cursor: pointer;
+    width: 130px;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+  }
+  
+.btn:active {
+    background-color: #666;
+    color: white;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'column1 column2 column3';
+    gap: 1em;
+    width: 80vw;
+    height: fit-content;
+    padding: 2em;
+    justify-content: center;
+    margin-left: 230px;
+    margin-top: -35px;
+}
+
+.box{
+    text-align: center;
+    padding: 1.25rem 0;
+    font-size: 1.875rem;
+    margin-bottom: -90px;
+    display: none;
+}
+
+/* .item1{
+    grid-area: column1;
+} */
+
+.photo{
+    max-width: 45vh;
+    justify-content: center;
+    padding-bottom: 0.2em;
+    margin-top: 100px;
+    border-radius: 35px;
+}
+
+h3{
+    font-family: 'GT Eesti Display Trial';
+    font-size: 30px;
+    color: hsl(15, 29%, 97%);
+}
+
+/* .item2{
+    grid-area: column2;
+} */
+
+  
+
+
+/* .grid{
+    line-height: 0;
+    margin-top: 10px;
+
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 4;
+    column-gap: 10px;
+} */
+
+/* #airtable-embed{
+    margin-left: 50px;
+} */

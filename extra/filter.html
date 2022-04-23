@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Food Collection</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/filter.css"/>
+    </head>
+
+    <body>
+        <header class="primary-header">
+                <a href="index.html">
+                    <img src="images/souporsaladicon.png" class="logo" width="80" height="80">
+                    </a>
+            <nav class="menu">
+            <ul>
+                <li>
+                    <a href="" class="current">Filter</a>
+                </li>
+                <li>
+                    <a href="#">About Collection</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+
+        <!-- <div class="foodContainer">
+            <div class="filter">
+				<div class="filter-container">
+					<div class="filterby-container">
+						<div class="filter-text">filter by</div>
+					</div> -->
+
+                    <div id="buttons">
+                        <button class="btn" onclick="filterObjects('all')">Show all</button>
+                        <br>
+                        <br>
+                        <button class="btn" onclick="filterObjects('soup')">Soup</button>
+                        <br>
+                        <br>
+                        <button class="btn" onclick="filterObjects('salad')">Salad</button>
+                        <br>
+                        <br>
+                        <button class="btn" onclick="filterObjects('sweet')">Sweet</button>
+                        <br>
+                        <br>
+                        <button class="btn" onclick="filterObjects('savoury')">Savoury</button>
+                    </div>
+<!-- 
+				</div>  
+			</div>
+        </div> -->
+
+        <!-- <div class="food-container">
+            <div class="grid-container"> -->
+
+                    <div class="box soup savoury" id="item1">
+                        <img src="images/chicken-noodle-soup.jpg" alt="chicken-noodle-soup" class="photo">
+                        <h3 class="title">Chicken Noodle Soup</h3>
+                    </div>
+
+                    <div class="box salad sweet" id="item2">
+                        <img src="images/maple_syrup_pancake.png" alt="maple_syrup_pancake" class="photo">
+                    </div>
+
+                    <div class="box soup savoury" id="item3">
+                        <img src="images/cheese-fondue.jpg" alt="cheese-fondue" class="photo">
+                    </div>
+
+                    <div class="box salad savoury" id="item4">
+                        <img src="images/open-sandwich.jpg" alt="open-sandwich" class="photo">
+                    </div>
+
+                    <div class="box soup sweet" id="item5">
+                        <img src="images/kheer.jpeg" alt="kheer" class="photo">
+                    </div>
+        
+            <!-- </div>
+        </div> -->
+
+
+        <script src="js/filter.js"></script>
+
+    </body>
+    </html>
+    
