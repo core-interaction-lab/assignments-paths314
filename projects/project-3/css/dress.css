@@ -41,7 +41,7 @@ p {
 
 .refresh p{
     position: absolute;
-    bottom: 25px;
+    bottom: 20px;
     right: 73.5%;
     color: hsl(198, 47%, 44%);
     font-family: 'Lora', serif; 
@@ -231,10 +231,19 @@ a:hover {
     flex-direction: row;
 }
 
+
+
 img {
     max-width: 150px;
+    min-width: 150px;
+    /* min-height: 100px; */
+    /* max-height: 150px; */
 }
 
+.icon {
+    max-width: 150px;
+    min-width: 0px;
+}
 
 #prev, #prev2, #prev3, #next, #next2, #next3{
     font-family: 'Varta', sans-serif;
@@ -280,22 +289,7 @@ img {
     cursor: pointer;
 }
 
-
-
-@media screen and (max-width: 700px) {
-    .post {
-      width: 100%;
-    }
-  }
-
-
-
-
-
-
-
-
-  .primary-header {
+.primary-header {
     display: flex;
 }
   
@@ -346,3 +340,10 @@ img {
 .left {
     float: left;
 }
+
+
+@media screen and (max-width: 700px) {
+    .post {
+      width: 100%;
+    }
+  }

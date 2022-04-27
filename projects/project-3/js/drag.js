@@ -1,5 +1,14 @@
 // $(document).ready(function() {alert("accessorize!"); })
 
+const storedClothes = localStorage.getItem('myClothes');
+
+if (storedClothes) {
+    const wardrobe = JSON.parse(storedClothes);
+    console.log(wardrobe);
+}
+
+const wardrobe = document.getElementById('my-clothes');
+
 $(document).ready(function() {$("#hat1").draggable(); })
 $(document).ready(function() {$("#hat2").draggable(); })
 $(document).ready(function() {$("#hat3").draggable(); })

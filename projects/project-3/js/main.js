@@ -1,3 +1,5 @@
+let selections = [ {}, {}, {} ];
+
 function fetchPrompt () {
     var fashionPrompt = document.getElementById('prompt');
     var prompts = ['Grunge', 'Soft', 'Cottagecore', 'Street', 'Monochrome'];
@@ -131,7 +133,14 @@ const buildSlideshow = (clothes) => {
 // };
 
 const buildSlide = (cloth, index) => {
+    // update selections variable
+    selections[0] = cloth;
+    console.log(selections);
+    
+    localStorage.setItem('myClothes', JSON.stringify(selections));
+
     const clothContainer = document.createElement('article');
+
 
     if (cloth.fields.picture) {
         // console.log(food.fields.Image[0].url);
@@ -271,6 +280,13 @@ const buildSlideshow2 = (clothes) => {
 // };
 
 const buildSlide2 = (cloth, index) => {
+
+    selections[1] = cloth;
+    console.log(selections);
+
+    localStorage.setItem('myClothes', JSON.stringify(selections));
+
+
     const clothContainer = document.createElement('article');
 
     if (cloth.fields.picture) {
@@ -389,7 +405,7 @@ const buildSlideshow3 = (clothes) => {
 
         const lastItem = slideshowContainer3.querySelectorAll('article') [slideCount-1];
         slideshowContainer3.removeChild(lastItem);
-        slideshowContainer3.prepend(buildSlide(clothes[leftIndex]));
+        slideshowContainer3.prepend(buildSlide3(clothes[leftIndex]));
     });
 };
 
@@ -401,6 +417,12 @@ const buildSlideshow3 = (clothes) => {
 // };
 
 const buildSlide3 = (cloth, index) => {
+
+    selections[2] = cloth;
+    console.log(selections);
+
+    localStorage.setItem('myClothes', JSON.stringify(selections));
+
     const clothContainer = document.createElement('article');
 
     if (cloth.fields.picture) {
