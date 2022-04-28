@@ -2,12 +2,26 @@
 
 const storedClothes = localStorage.getItem('myClothes');
 
+const wardrobeContainer = document.getElementById('my-clothes');
+
+const buildItem = item => {
+    const imageContainer = document.createElement("div");
+
+    imageContainer.classList.add('item-image');
+    const imgEl = document.createElement("img");
+    imgEl.src = item.fields.picture[0].url;
+
+    imageContainer.append(imgEl);
+    return imageContainer;
+}
+
 if (storedClothes) {
     const wardrobe = JSON.parse(storedClothes);
     console.log(wardrobe);
-}
 
-const wardrobe = document.getElementById('my-clothes');
+    const itemEls = wardrobe.map(buildItem);
+    wardrobeContainer.append(...itemEls);
+}
 
 $(document).ready(function() {$("#hat1").draggable(); })
 $(document).ready(function() {$("#hat2").draggable(); })

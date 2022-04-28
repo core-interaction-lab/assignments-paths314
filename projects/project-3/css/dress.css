@@ -352,6 +352,13 @@ img {
     float: left;
 }
 
+#mannequin {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 150px;
+    right: 45%;
+}
 
 @media screen and (max-width: 700px) {
     .post {
