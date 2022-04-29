@@ -386,7 +386,7 @@ const buildSlideshow3 = (clothes) => {
         console.log(leftIndex, rightIndex);
         
         slideshowContainer3.removeChild(slideshowContainer3.children [0]);
-        slideshowContainer3.append(buildSlide(clothes[rightIndex],rightIndex));
+        slideshowContainer3.append(buildSlide3(clothes[rightIndex],rightIndex));
     });
 
     prevButton3.addEventListener('click', () => {
