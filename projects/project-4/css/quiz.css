@@ -9,32 +9,17 @@ body {
     box-sizing: border-box;
 }
 
-
-#box {
-    background-color: hsl(0, 0%, 100%);
-    height: 155px;
-    width: cover;
-    position: relative;
-    z-index: 0;
-    bottom: 500px;
-}
-
 h1 {
     font-weight: 400;
     font-size: 7.5vw;
 }
 
 h2 {
-  text-align: center;
-  /* margin-top: 7vh;
-  margin-bottom: 3%;
-  margin-right: 5vh; */
-    
+  text-align: center;    
   font-family: 'VT323', monospace; 
   font-size: 80px;
   font-weight: 100;
   color:hsl(132, 71%, 19%);
-  /* padding: 20px; */
   margin-top: 20px;
   margin-bottom: 20px;
   display: inline-block;
@@ -52,39 +37,58 @@ p {
     font-family:'VT323', monospace; 
     letter-spacing: 2px;
     font-weight: 50;
-    font-size: 150%;
+    font-size: 170%;
     flex-grow: 1;
     padding: auto;
-    margin-left: 15vw;  
+    margin-left: 15vw;
     margin-right: 15vw;
     text-align: center;
-    color:hsl(133, 75%, 40%);
-    z-index: 999;
+    color: hsl(132, 71%, 19%);
 }
 
-.content {
-    z-index: 999;
-}
+/* .content {
+
+} */
 
 .post {
     display: block;
-    z-index: 999;
 }
 
 .post__header {
     text-align: center;
-    /* display: block; */
-    z-index: 999;
 }
 
 .post__body{
     margin-top: 5vh;
-    z-index: 999;
+    margin-bottom: 5vh;
+}
+
+.flexbox-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-btn {
+    background-color: hsl(0, 0, 100%);
+    border: 10px;
+    border-color: hsl(133, 75%, 40%);
+    color: hsl(132, 71%, 19%);
+    width: 250px;
+    height: 200px;
+    padding: 30px;
+
+    font-family: 'VT323', monospace;
+    font-size: 180%;
 }
 
 .primary-header {
     display: flex;
-    z-index: 999;
+    position: sticky;
 }
   
 .link a {
@@ -95,7 +99,7 @@ p {
 }
 
 .link a:hover {
-    color: 		hsl(133, 83%, 31%);
+    color: hsl(133, 83%, 31%);
 }
 
 .menu{
