@@ -26,6 +26,7 @@ function fetchPlace () {
 }
 fetchPlace();
 
+
 function fetchCity () {
     const fashionPrompt = document.getElementById('city');
     var prompts = ['Bandung', 'Jakarta', 'London', 'Los Angeles', 'New York'];
@@ -45,8 +46,6 @@ const currentCity = fetchCity();
 const fetchCloth = async () => {
     const response = await fetch(`https://api.airtable.com/v0/appkNVqbznidQU28x/Table%201?api_key=keyg6NaxejaLbInJ7`).then(data => data.json());
     // console.log(response);
-
-    
 
     const clothesArray = response.records;
     filterCity(currentCity, clothesArray);
@@ -176,9 +175,6 @@ const buildSlide = (cloth, index) => {
 };
 
 fetchCloth();
-
-
-
 
 
 

@@ -5,13 +5,13 @@
 
         <link rel="icon" type="image/png" href="images/home-button.png">
 
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/quiz.css" />
      
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
 
     </head>
 
@@ -42,6 +42,7 @@
         <main class="content">
             <section class="posts">
                 <article class="post">
+                <form  id="form1">
                     <header class="post__header">
                         <!-- <h2>About</h2> -->
                     </header>
@@ -49,19 +50,151 @@
                     <br>
 
                     <div class="post__body">
-                        <div class="flexbox-1">
-                            <div class="quiz-btn"> Hello </div>
-                            <div class="quiz-btn"> Hello </div>
-                        </div>
 
-                        <div class="flexbox-2">
-                            <div class="quiz-btn"> Hello </div>
-                            <div class="quiz-btn"> Hello </div>
-                        </div>
+                        <section id="s1">
+
+                            <!-- QUESTION 1 -->
+
+                            <p>What's for breakfast?</p>
+                            <div class="flexbox-1">
+                                <a href="#s2">
+                                    <button class="quiz-btn" name="breakfast" id="nothing"
+                                    data-type="1" 
+                                    value="10"> 
+                                        <span class="quiz-btn-text" >Nothing</span>
+                                    </button>
+
+                                    <button class="quiz-btn" name="breakfast" id="pancakes" 
+                                    data-type="1"
+                                    value="5"> 
+                                        <span class="quiz-btn-text" >Pancakes</span>
+                                    </button>
+                                </a>
+                            </div>
+
+                            <div class="flexbox-2">
+                                <a href="#s2">
+                                    <button class="quiz-btn" name="breakfast" id="egg"
+                                    data-type="1"
+                                    value="5"> 
+                                        <span class="quiz-btn-text">Fried Egg</span>
+                                    </button>
+
+                                    <button class="quiz-btn" name="breakfast" id="egg"
+                                    data-type="1"
+                                    value="0"> 
+                                        <span class="quiz-btn-text" name="breakfast" id="fruit" value="0">Fruit</span>
+                                    </button>
+                                </a>
+                            </div>
+
+
+
+                        </section>
+
+                        <section id="s2">
+                            <br><br><br><br><br>
+                            
+                            <!-- QUESTION 2 -->
+
+                            <p>Play some music!</p>
+                            <div class="flexbox-1">
+                                <a href="#s10">
+                                    <button 
+                                    class="quiz-btn" 
+                                    data-type="2"
+                                    value="10"> 
+                                        <span class="quiz-btn-text">Pop</span>
+                                    </button>
+
+                                    <button 
+                                    class="quiz-btn" 
+                                    data-type="2"
+                                    value="5"> 
+                                        <span class="quiz-btn-text" name="music" id="rock" >Rock</span>
+                                    </button>
+                                </a>
+                            </div>
+
+                            <div class="flexbox-2">
+                                <a href="#s10">
+                                    <button class="quiz-btn" data-type="2" value="5"> 
+                                        <span class="quiz-btn-text" name="music" id="alt-indie" >Alternative/Indie</span>
+                                    </button>
+
+                                    <button class="quiz-btn" data-type="2" value="0"> 
+                                        <span class="quiz-btn-text" name="music" id="metal" >Metal</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </section>
+
+                        <section id="s10">
+
+                            <br><br><br><br><br>
+
+                            <!-- QUESTION 10 -->
+
+                            <p>What's for breakfast?</p>
+                            <div class="flexbox-1">
+                                <a href="#s11">
+                                    <button class="quiz-btn" name="breakfast" id="nothing"
+                                    data-type="10" 
+                                    value="10"> 
+                                        <span class="quiz-btn-text" >Nothing</span>
+                                    </button>
+
+                                    <button class="quiz-btn" name="breakfast" id="pancakes" 
+                                    data-type="10"
+                                    value="5"> 
+                                        <span class="quiz-btn-text" >Pancakes</span>
+                                    </button>
+                                </a>
+                            </div>
+
+                            <div class="flexbox-2">
+                                <a href="#s11">
+                                    <button class="quiz-btn" name="breakfast" id="egg"
+                                    data-type="10"
+                                    value="5"> 
+                                        <span class="quiz-btn-text">Fried Egg</span>
+                                    </button>
+
+                                    <button class="quiz-btn" name="breakfast" id="egg"
+                                    data-type="10"
+                                    value="5"> 
+                                        <span class="quiz-btn-text" name="breakfast" id="fruit" value="0">Fruit</span>
+                                    </button>
+                                </a>
+                            </div>
+
+                        </section>
+
+
+
+                        <br><br><br>
+
                     </div>
+                </form>
                 </article>
             </section>
+
+            <section id="s11">
+                <div id="result">
+                    <p id="answer"></p>
+                    <p id="description"></p>
+                </div>
+            </section>
+            
+            <!-- <div class="btn-container">
+                <button class="submit-btn" type="submit" value="Submit">Submit</button>
+            </div> -->
+
+
         </main>
     </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 
 </html>

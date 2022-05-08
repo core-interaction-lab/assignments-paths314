@@ -19,6 +19,15 @@ body {
     bottom: 500px;
 }
 
+#box2 {
+  background-color: hsl(0, 0%, 100%);
+  height: 155px;
+  width: cover;
+  position: relative;
+  z-index: 0;
+  bottom: 520px;
+}
+
 h1 {
     font-weight: 400;
     font-size: 7.5vw;

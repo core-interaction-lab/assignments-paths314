@@ -2,6 +2,10 @@ html, body {
     min-height: 100%;
 }
 
+.cursor {
+  cursor: url(images/cursor/cursor-1-smallest.png), auto;
+} 
+
 body {
     background-color: hsl(0, 0%, 100%);
     margin: 0;
@@ -42,7 +46,7 @@ p {
     font-family:'VT323', monospace; 
     letter-spacing: 2px;
     font-weight: 50;
-    font-size: 170%;
+    font-size: 185%;
     flex-grow: 1;
     padding: auto;
     margin-left: 15vw;
@@ -59,18 +63,18 @@ p {
 
 .btn-container a {
   font-family:'VT323', monospace; 
-  font-size: 170%;
+  font-size: 185%;
   text-decoration: none;
   color:hsl(133, 75%, 40%);
   z-index: 999;
+  position: relative;
 }
 
-
-
 #pxl-button {
-  width: 200px;
+  width: 220px;
   height: auto;
   z-index: 0;
+  position: absolute;
 }
 
 .content {
