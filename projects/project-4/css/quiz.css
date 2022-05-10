@@ -43,16 +43,30 @@ p {
     padding: auto;
     margin-left: 15vw;
     margin-right: 15vw;
+    margin-bottom: 50px;
     text-align: center;
     color: hsl(132, 71%, 19%);
 }
 
+.question-img img {
+  width: auto;
+  height: 200px;
+  padding: none;
+  margin: none;
+}
+
+.question-img {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 /* .content {
 
 } */
 
 .post {
     display: block;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .post__header {
@@ -61,8 +75,9 @@ p {
 
 .post__body{
     margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-bottom: 0px;
     z-index: 999;
+    background-color: hsl(90, 100%, 87%);
 }
 
 .post__body-back{
@@ -103,7 +118,10 @@ p {
     width: 350px;
     height: 150px;
     /* padding: 30px; */
-    margin: 20px;
+    margin-bottom: 40px;
+    margin-top: none;
+    margin-left: 15px;
+    margin-right: 15px;
 
     font-family: 'VT323', monospace;
     font-size: 180%;
@@ -123,32 +141,6 @@ p {
 .post__body a {
   text-decoration: none;
   display: flex;
-}
-
-
-#s11 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 50px;
-  background-color: hsl(132, 71%, 19%);
-  color:hsl(0, 0%, 100%);
-  margin-top: 100px;
-  margin-bottom: none;
-  height: 550px;
-}
-
-#result {
-  justify-content: center;
-  align-content: center;
-}
-
-#answer {
-  color: hsl(0, 0%, 100%);
-}
-
-#description {
-  color: hsl(0, 0%, 100%);
 }
 
 /* .btn-container {
@@ -194,6 +186,16 @@ p {
     display: flex;
     align-items: center;   
     z-index: 999; 
+    flex-grow: 1;
+}
+
+.menu p{
+  margin-left: 50px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: hsl(133, 83%, 31%);
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .menu ul {
@@ -309,3 +311,135 @@ p {
   animation-direction: normal, alternate;
 }
 
+
+
+section {
+  padding-bottom: 80px;
+  /* padding-top: none; */
+}
+
+
+/* section colors */
+
+#s1 {
+  background-color: hsl(0, 0%, 100%);
+  /* background-color: hsl(90, 100%, 87%); */
+  padding-top: 40px;
+}
+
+#s2 {
+  /* background-color: hsl(0, 0%, 100%); */
+  background-color: hsl(90, 100%, 87%);
+}
+
+#s3 {
+  background-color: hsl(0, 0%, 100%);
+  /* background-color: hsl(90, 100%, 87%); */
+}
+
+#s4 {
+  /* background-color: hsl(0, 0%, 100%); */
+  background-color: hsl(90, 100%, 87%);
+}
+
+#s5 {
+  background-color: hsl(0, 0%, 100%);
+  /* background-color: hsl(90, 100%, 87%); */
+}
+
+#s6 {
+  /* background-color: hsl(0, 0%, 100%); */
+  background-color: hsl(90, 100%, 87%);
+}
+
+#s7 {
+  background-color: hsl(0, 0%, 100%);
+  /* background-color: hsl(90, 100%, 87%); */
+}
+
+#s8 {
+  /* background-color: hsl(0, 0%, 100%); */
+  background-color: hsl(90, 100%, 87%);
+}
+
+#s9 {
+  background-color: hsl(0, 0%, 100%);
+  /* background-color: hsl(90, 100%, 87%); */
+}
+
+#s10 {
+  /* background-color: hsl(0, 0%, 100%); */
+  background-color: hsl(90, 100%, 87%);
+}
+
+#s11 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 50px;
+  background-color: hsl(132, 71%, 19%);
+  color:hsl(0, 0%, 100%);
+  /* margin-top: 100px; */
+  margin-bottom: none;
+  height: 550px;
+}
+
+#result {
+  justify-content: center;
+  align-content: center;
+}
+
+#answer {
+  color: hsl(0, 0%, 100%);
+  /* color: hsl(90, 100%, 91%); */
+  font-size: 130px;
+  margin-top: 90px;
+}
+
+#description {
+  /* color: hsl(0, 0%, 100%); */
+  color: hsl(90, 100%, 91%);
+}
+
+
+
+/* ----------------------------------------------- END BUTTON ----------------------------------------------------*/
+
+#btn-container{
+  width: 97vw;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  /* max-height: fit-content;
+  position: relative; */
+  /* z-index: 999; */
+}
+
+.btn-container{
+  width: 97vw;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  /* max-height: fit-content;
+  position: relative; */
+  /* z-index: 999; */
+}
+
+
+.button-text {
+  font-family:'VT323', monospace; 
+  font-size: 170%;
+  text-decoration: none;
+  color:hsl(133, 75%, 40%);
+  z-index: 999;
+  position: absolute;
+  padding-top: 24px;
+}
+
+
+#pxl-button {
+  width: 200px;
+  height: auto;
+  z-index: 0;
+  position: absolute;
+}

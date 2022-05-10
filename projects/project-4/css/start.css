@@ -55,52 +55,68 @@ p {
     color: hsl(132, 71%, 19%);
 }
 
-.btn-container{
-  width: 100vw;
+#btn-container{
+  width: 97vw;
+  height: 75px;
   display: flex;
   justify-content: center;
+  /* max-height: fit-content;
+  position: relative; */
+  /* z-index: 999; */
 }
 
-.btn-container a {
+.btn-container{
+  width: 97vw;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  /* max-height: fit-content;
+  position: relative; */
+  /* z-index: 999; */
+}
+
+
+.button-text {
   font-family:'VT323', monospace; 
-  font-size: 185%;
+  font-size: 170%;
   text-decoration: none;
   color:hsl(133, 75%, 40%);
   z-index: 999;
-  position: relative;
+  position: absolute;
+  padding-top: 24px;
 }
 
 #pxl-button {
-  width: 220px;
+  width: 200px;
   height: auto;
   z-index: 0;
   position: absolute;
 }
 
-.content {
+/* .content {
     z-index: 999;
-}
+} */
 
 .post {
     display: block;
-    z-index: 999;
+    /* z-index: 999; */
 }
 
 .post__header {
     text-align: center;
     /* display: block; */
-    z-index: 999;
+    /* z-index: 999; */
 }
 
 .post__body{
     margin-top: 5vh;
     margin-bottom: 5vh;
-    z-index: 999;
+    /* z-index: 999; */
 }
 
 .primary-header {
     display: flex;
-    z-index: 999;
+    /* z-index: 999; */
 }
   
 .link a {
@@ -117,7 +133,7 @@ p {
 .menu{
     display: flex;
     align-items: center;   
-    z-index: 999; 
+    /* z-index: 999;  */
 }
 
 .menu ul {

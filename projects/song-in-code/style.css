@@ -52,9 +52,10 @@ html{
   z-index: 100;
   position: absolute;
   background-color: none;
-  top: 250px;
+  top: 290px;
   right: 450px;
 }
+
 /* button */
 .button
   {background-color:rgba(255, 65, 65, 0);
