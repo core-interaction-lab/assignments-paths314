@@ -1,10 +1,7 @@
 html, body {
     min-height: 100%;
+    cursor: url("../images/cursor/cursor-final.png"), auto;
 }
-
-.cursor {
-  cursor: url(images/cursor/cursor-1-smallest.png), auto;
-} 
 
 body {
     background-color: hsl(0, 0%, 100%);
@@ -56,13 +53,14 @@ p {
 }
 
 #btn-container{
-  width: 97vw;
+  width: 200px;
   height: 75px;
   display: flex;
   justify-content: center;
   /* max-height: fit-content;
   position: relative; */
   /* z-index: 999; */
+  cursor: url("../images/cursor/cursor-pointer.png"), auto;
 }
 
 .btn-container{
@@ -73,6 +71,7 @@ p {
   /* max-height: fit-content;
   position: relative; */
   /* z-index: 999; */
+  cursor: url("../images/cursor/cursor-final.png"), auto;
 }
 
 
@@ -247,4 +246,6 @@ p {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+
+  cursor: url("../images/cursor/cursor-pointer.png"), auto;
 }

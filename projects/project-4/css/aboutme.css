@@ -1,5 +1,6 @@
 html, body {
     min-height: 100%;
+    cursor: url("../images/cursor/cursor-final.png"), auto;
 }
 
 body {
@@ -224,4 +225,6 @@ p {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+
+  cursor: url("../images/cursor/cursor-pointer.png"), auto;
 }

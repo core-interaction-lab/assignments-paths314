@@ -1,6 +1,6 @@
 html, body {
   min-height: 100%;
-  cursor: url("images/cursor.png"), auto;
+  cursor: url("../images/cursor/cursor-final.png"), auto;
 }
 
 body {
@@ -109,6 +109,7 @@ h3 {
 
 .menu ul li a:hover{
   color: 	hsl(132, 71%, 19%);
+  cursor: url("../images/cursor/cursor-pointer.png"), auto;
 }
 
 
@@ -182,4 +183,6 @@ h3 {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
+
+  cursor: url("../images/cursor/cursor-pointer.png"), auto;
 }
