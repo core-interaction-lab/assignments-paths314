@@ -1,0 +1,89 @@
+html, body{
+    background-color: rgb(237, 79, 44);
+    padding: 50px;
+}
+
+header {
+    justify-content: center;
+    display: flex;
+}
+
+img {
+    width: 80px;
+    height: auto;
+}
+
+#img-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* h1 {
+    color: hsl(0, 100%, 100%);
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+} */
+
+a {
+    text-decoration: none;
+}
+
+#prompt {
+    display: flex;
+    justify-content: center;
+    font-family: 'Flavors', cursive;
+    color: white;
+    font-size: 80px;
+}
+
+#prompt:hover {
+    color:bisque;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#add-todo-btn {
+    border: 0px solid rgb(255, 115, 83);
+    background-color: rgb(255, 115, 83);
+    width: fit-content;
+    height: 50px;
+    color: hsl(0, 100%, 100%);
+    font-family: 'Comfortaa', cursive;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#add-todo-btn:hover {
+    background-color: bisque;
+    transition: ease-in-out .1s;
+    color:  rgb(237, 79, 45);
+}
+
+#todo-textarea {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    padding-top: 15px;
+    border: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.flex-col {
+margin-top: 50px;
+}
+
+#todo-container {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+}

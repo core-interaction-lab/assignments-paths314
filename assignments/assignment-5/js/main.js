@@ -1,3 +1,12 @@
+function fetchPrompt () {
+    var fashionPrompt = document.getElementById('prompt');
+    var prompts = ['Pasta', 'Fried Rice', 'Tomato Soup', 'Sandwich', 'Pizza', 'Milkshake', 'Burrito', 'Burger'];
+    var prompt = prompts[Math.floor(Math.random()*prompts.length)];
+    fashionPrompt.append(prompt);
+}
+fetchPrompt();
+
+
 const todoTextarea = document.getElementById('todo-textarea');
 const addTodoBtn = document.getElementById('add-todo-btn');
 const todoContainer = document.getElementById('todo-container');
@@ -26,18 +35,10 @@ const removeTodoItem = (index) => {
 const buildTodoItem = (item, index) => {
     const todoEl = document.createElement('article');
     const textEl = document.createElement('p');
-    const deleteBtn = document.createElement('button');
-
-    deleteBtn.innerHTML = 'Delete';
-
-    deleteBtn.addEventListener('click', evt => {
-        removeTodoItem(index);
-        buildTodoItems(state.todoItems);
-    });
 
     textEl.innerHTML = item;
 
-    todoEl.append(textEl, deleteBtn);
+    todoEl.append(textEl);
     return todoEl;
 };
 
