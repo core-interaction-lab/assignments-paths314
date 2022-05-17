@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Chef</title>
+        <title>Gordon Ramsay Insult Generators</title>
         <link rel="icon" type="image/png" href="images/favicon.png">
 
         <meta name ="viewport" content="width=devide-width, initial scale=1"/>
@@ -16,27 +16,69 @@
         <div id="img-container"><img src="images/chefhat2.png"></div>
 
         <header>
-            <a href=""><div id="prompt"></div></a>
+            <a href="index.html"><div id="prompt">Gordon Ramsay Insult Generator</div></a>
         </header>
 
         <main class="content">
         
             <section class="input">
-                <div>
+                <!-- <div>
                     <textarea id="todo-textarea"></textarea>
                 </div>
                 
                 <div class="button-container">
                 <button type ="button" id="add-todo-btn">Add ingredient!</button>
-                </div> 
-    
-            </section>
+                </div>  -->
 
-            <section class="flex-col">
-                <div  id="todo-container"></div> 
+              
+                    <form id="madlib-form">
+                        <input type="text" name="input-1" placeholder="Rude Adjective" required />
+                        <input type="text" name="input-2" placeholder="Swear Word" required />
+                        <input type="text" name="input-3" placeholder="Animal or Thing" required /> <br>
+                        <input type="text" name="input-4" placeholder="Animal" required />
+                        <input type="text" name="input-5" placeholder="Bodily Fluid" required />
+                        <input type="text" name="input-6" placeholder="Food" required />
+
+                        <br> 
+
+                        <div class="btn-container">
+                            <a href="#insults">
+                                <button type="submit">
+                                    Submit
+                                </button>
+                            </a>
+                        </div>
+
+                    </form>
+
+
+                
+            </section>
+            
+            <section id="insults">
+                
+                <h1>Gordon says:</h1>
+                    <p>
+                        1. You're a <span class="input-value" data-input="input-1"></span>
+                        <span class="input-value" data-input="input-2"></span> sandwich!
+                    </p>
+                    
+                    <p>
+                        2. My <span class="input-value" data-input="input-3"></span> could do better than you!
+                    </p>
+
+                    <p>
+                        3. This tastes like <span class="input-value" data-input="input-4"></span> <span class="input-value" data-input="input-5"></span>.
+                    </p>
+
+                    <p>
+                        4. Hey <span class="input-value" data-input="input-6"></span>-head, pay attention.
+                    </p>
             </section>
         </main>
 
         <script src="js/main.js"></script>
     </body>
 </html>
+
+
