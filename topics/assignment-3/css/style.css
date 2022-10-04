@@ -1,0 +1,307 @@
+.dark-mode {
+    background-image: url(/Assignment-3/assets/night.png);
+    transition: ease-in-out 0.7s;
+}
+
+
+/* Flickering animation */
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 2px #fff,
+        0 0 6px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(255, 208, 81),
+        0 0 80px rgb(255, 208, 81),
+        0 0 90px rgb(255, 208, 81),
+        0 0 100px rgb(255, 208, 81),
+        0 0 150px rgb(255, 208, 81);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+}
+
+@keyframes moonmation {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        filter: 
+        drop-shadow(0 0 2px #fff)
+        drop-shadow(0 6px #fff)
+        drop-shadow(0 0 19px #fff)
+        drop-shadow(0 0 40px rgb(255, 208, 81))
+        drop-shadow(0 0 0px rgb(255, 208, 81))
+        drop-shadow(0 0 90px rgb(255, 208, 81))
+
+    }
+    
+    20%, 24%, 55% {     
+        filter: 
+        drop-shadow(none);
+    }    
+}
+
+/* @keyframes moonmation {
+    
+    from {
+
+        filter: 
+        drop-shadow(0 0 2px #fff)
+        drop-shadow(0 6px #fff)
+        drop-shadow(0 0 19px #fff)
+        drop-shadow(0 0 40px rgb(255, 208, 81))
+        drop-shadow(0 0 0px rgb(255, 208, 81))
+        drop-shadow(0 0 90px rgb(255, 208, 81))
+        drop-shadow(0 0 100px rgb(255, 208, 81))
+        drop-shadow(0 0 150px rgb(255, 208, 81));
+
+    }
+    
+    to {        
+        filter: drop-shadow(none);
+    }    
+} */
+
+
+
+.dark-mode h1 {
+    color:rgba(255, 255, 255, 0);
+    /* color: #fff; */
+    font-weight: 700;
+    animation: flicker 1.5s infinite alternate;
+    -webkit-text-stroke: 1px rgb(255, 255, 255, 50);
+}
+
+.dark-mode #icon {
+    filter: invert();
+}
+
+/* .dark-mode #moon {
+    animation: moonmation 1.5s infinite alternate;  
+} */
+
+#icon {
+    width: 50px;
+    height: auto;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 10px #fff,;
+}
+
+body {
+    background-image: url(/Assignment-3/assets/day2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: auto;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+    color: blanchedalmond;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(255, 218, 162);
+    background-color: rgb(41, 54, 91);
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin: 0px;
+    margin-bottom: 3px;
+    text-align: center;
+    word-spacing: 15px;
+    letter-spacing: 3px;
+    box-shadow: 10px 10px rgb(30, 40, 67);
+}
+
+#circle {
+    background: rgb(41, 54, 91);
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    box-shadow: 10px 10px rgb(30, 40, 67);
+    position: relative;
+}
+
+#pole {
+    background-color: rgb(255, 229, 189);
+    width: 20px;
+    height: 122px;
+    box-shadow: 5px 5px rgb(246, 200, 132);
+}
+
+svg{
+    width: 65%; 
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    z-index: 1000;
+}
+
+#hand{
+    width: 65%; 
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left: 55px;
+}
+
+.dark-mode #hand {
+    visibility: hidden;
+}
+
+
+#outline {
+    visibility: hidden;
+    position: absolute;
+    z-index: 100;
+}
+
+#outline-black {
+    visibility: hidden;
+    position: absolute;
+    z-index: 20;
+}
+
+#fill{
+    visibility: hidden;
+    position: absolute;
+    z-index: 10;
+}
+
+
+.dark-mode #outline {
+    visibility: visible;
+    z-index: 20;
+    animation: moonmation 1.5s infinite alternate;
+    stroke: #fff;
+
+}
+
+.dark-mode #outline-black {
+    visibility: hidden;
+    opacity: 0%;
+}
+
+.dark-mode #fill{
+    z-index: 10;
+    opacity: 50%;
+}
+
+
+#star {
+    filter: invert(100%) sepia(26%) saturate(4232%) hue-rotate(308deg) brightness(101%) contrast(103%);
+    width: 45px;
+    height: auto;
+    position: absolute;
+    top: 220px;
+    left: 265px;
+}
+
+#moon {
+    filter: invert(100%) sepia(26%) saturate(4232%) hue-rotate(308deg) brightness(101%) contrast(103%);
+    width: 30px;
+    height: auto;   
+    position: absolute;
+    top: 60px;
+    left: 55px;
+
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#sag {
+    visibility: hidden;
+    position: absolute;
+    height: 250px;
+    width: auto;
+    top: 95px;
+    left: 150px;
+    opacity: 100%;
+    filter: blur(3px);
+}
+
+.dark-mode #sag {
+    visibility: visible;
+}
+
+#aquarius {
+    visibility: hidden;
+    position: absolute;
+    height: 250px;
+    width: auto;
+    top: 380px;
+    left: 250px;
+    opacity: 100%;
+    filter: blur(3px);
+}
+
+.dark-mode #aquarius {
+    visibility: visible;
+}
+
+#gemini {
+    visibility: hidden;
+    position: absolute;
+    height: 250px;
+    width: auto;
+    top: 15px;
+    left: 950px;
+    opacity: 100%;
+    filter: blur(3px);
+}
+
+.dark-mode #gemini {
+    visibility: visible;
+}
+
+
+
+#libra {
+    visibility: hidden;
+    position: absolute;
+    height: 250px;
+    width: auto;
+    top: 310px;
+    left: 870px;
+    opacity: 100%;
+    filter: blur(3px);
+}
+
+.dark-mode #libra {
+    visibility: visible;
+}
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+} */
+
